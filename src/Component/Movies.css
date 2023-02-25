@@ -1,0 +1,46 @@
+* {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+}
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title {
+  padding: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movieBox {
+  border-radius: 10px;
+  width: 300px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+.detail {
+  margin: 12px;
+}
+
+.img {
+  height: 470px;
+  width: 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.knomMoreBtn {
+  width: 100%;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  outline: none;
+  border: none;
+  margin: 5px 0px;
+}
