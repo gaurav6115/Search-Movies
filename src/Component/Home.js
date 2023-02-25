@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import SearchIcon from "@mui/icons-material/Search";
+// import {SearchIcon} from "@mui/icons-material";
 import Movies from "./Movies";
 import "./Home.css";
 
@@ -10,7 +10,9 @@ const Home = () => {
   const [error, setError] = useState("");
 
   const handleInput = (e) => {
-    setSearch(e.target.value);
+    const searchValue = e.target.value;
+    searchValue.replaceAll(" ", "+")
+    setSearch(searchValue);
   };
 
   const fetchApi = () => {
@@ -35,7 +37,7 @@ const Home = () => {
   return (
     <div>
       <div className="searchContainer">
-        <SearchIcon />
+        {/* <SearchIcon /> */}
         <input
           type="text"
           value={search}
