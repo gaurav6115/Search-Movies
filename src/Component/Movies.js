@@ -19,9 +19,9 @@ const Movies = ({ moviesDetail }) => {
               <div className="title">Title : {data.Title}</div>
               <div className="title"> Type : {data.Type}</div>
               <div className="title"> Year : {data.Year}</div>
-              <button onClick={handleKnowMore} className="knomMoreBtn">
+              {/* <button onClick={handleKnowMore} className="knomMoreBtn">
                 Know More
-              </button>
+              </button> */}
             </div>
           </div>
         );

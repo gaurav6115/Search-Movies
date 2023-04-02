@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 // import {SearchIcon} from "@mui/icons-material";
 import Movies from "./Movies";
-import "./Home.css";
+import "./LandingPage.css";
 
-const Home = () => {
+const LandingPage = () => {
   const [search, setSearch] = useState("");
   const [moviesDetail, setMoviesDetail] = useState([]);
   const [error, setError] = useState("");
@@ -54,4 +54,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LandingPage;

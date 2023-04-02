@@ -1,9 +1,9 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
-import Home from "./Component/Home";
+import LandingPage from "./Component/LandingPage";
 import Movies from "./Component/Movies";
 
 const App = () => {
@@ -13,12 +13,9 @@ const App = () => {
       <div className="appContainer">
         <h1 className="header">Search For Movies By Their Title</h1>
 
-        <Link to="/"></Link>
-        <Link to="/movies/${ID}"></Link>
-
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/movies/${ID}" element={<Movies />}></Route>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/movies/:IMDBID" element={<Movies />}></Route>
         </Routes>
       </div>
     </div>
